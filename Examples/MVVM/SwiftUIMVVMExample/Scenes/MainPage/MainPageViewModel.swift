@@ -8,6 +8,8 @@
 import Foundation
 
 @MainActor class MainPageViewModel: ObservableObject {
+    
+    // SOURCE OF TRUTH
     @Published var foodData: Food?
     @Published private(set) var errorText: String?
         
@@ -18,6 +20,7 @@ import Foundation
     }
     
     
+    /// Retrieve data from Network Manager
     func fetchFoodData() async {
         Task {
             do {

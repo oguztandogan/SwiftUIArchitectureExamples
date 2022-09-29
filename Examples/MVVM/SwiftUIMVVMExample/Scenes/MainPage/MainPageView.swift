@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MainPageView: View {
+    
     @ObservedObject var viewModel: MainPageViewModel
 
     var body: some View {
@@ -16,6 +17,7 @@ struct MainPageView: View {
             Text("Foods: ")
             
             Text(viewModel.foodData?.dish ?? "Loading")
+            
 
             if let errorText = viewModel.errorText {
                 Text(errorText).foregroundColor(.red)

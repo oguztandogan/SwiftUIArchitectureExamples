@@ -1,8 +1,8 @@
 //
 //  NetworkManager.swift
-//  SwiftUIMVVMExample
+//  SwiftUIVIPERExample
 //
-//  Created by Oguz Tandogan on 26.09.2022.
+//  Created by Oguz Tandogan on 27.09.2022.
 //
 
 import Foundation
@@ -13,8 +13,6 @@ protocol NetworkManagerProtocol {
 
 struct NetworkManager: NetworkManagerProtocol {
     
-    /// Fetchs data from Rest API
-    /// - Returns: Data
     func getRandomFood() async throws -> Food {
         guard let url = URL(string: "https://random-data-api.com/api/food/random_food") else { fatalError("Missing URL") }
         let urlRequest = URLRequest(url: url)
