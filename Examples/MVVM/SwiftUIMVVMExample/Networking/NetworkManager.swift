@@ -24,5 +24,5 @@ struct NetworkManager: NetworkManagerProtocol {
         let decodedFood = try JSONDecoder().decode(Food.self, from: data)
         return decodedFood
     }
-    
+
 }
