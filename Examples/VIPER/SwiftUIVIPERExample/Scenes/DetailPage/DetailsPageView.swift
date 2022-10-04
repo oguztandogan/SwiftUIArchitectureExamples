@@ -10,26 +10,23 @@ import SwiftUI
 
 struct DetailsPageView: View {
     
-    @ObservedObject var presenter: DetailsPagePresenter
+    @ObservedObject var presenter: Presenter
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Food Details: ")
-            
-            Text(presenter.food)
-
+            Text(presenter.food.description)
         }
+        .padding()
         .navigationBarTitle("Food Details", displayMode: .inline)
     }
 }
 
 struct DetailsPageView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = DetailsPagePresenter(params: mockFood.description)
-        let list = DetailsPageView(presenter: presenter)
+        let presenter = DetailsPageView.Presenter(food: Food.mockFood)
         return Group {
             NavigationView {
-                list
+                DetailsPageView(presenter: presenter)
             }
         }
     }

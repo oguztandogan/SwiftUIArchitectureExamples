@@ -9,12 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainPageView(presenter: MainPagePresenter())
+        MainPageView(presenter: MainPageView.Presenter(
+            router: MainPageView.Router(),
+            interactor: MainPageView.Interactor(networkManager: NetworkManager())
+        ))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainPageView(presenter: MainPagePresenter())
+        MainPageView(presenter: MainPageView.Presenter(
+            router: MainPageView.Router(),
+            interactor: MainPageView.Interactor(networkManager: NetworkManager())
+        ))
     }
 }

@@ -7,16 +7,18 @@
 
 import SwiftUI
 
-final class MainPageRouter {
-    func makeDetailsView(food: String) -> some View {
-        let presenter = DetailsPagePresenter(params: mockFood.description)
-        let detailView = DetailsPageView(presenter: presenter)
-        return detailView
+extension MainPageView {
+    class Router {
+        func makeDetailsView(food: Food) -> some View {
+            let presenter = DetailsPageView.Presenter(food: food)
+            let detailView = DetailsPageView(presenter: presenter)
+            return detailView
+        }
     }
 }
 
 struct FrogsListRouter_Previews: PreviewProvider {
     static var previews: some View {
-        MainPageRouter().makeDetailsView(food: mockFood.description)
+        MainPageView.Router().makeDetailsView(food: Food.mockFood)
     }
 }

@@ -8,26 +8,33 @@
 import Foundation
 import SwiftUI
 
-
-@MainActor class MainPagePresenter: ObservableObject {
-    
-    private let router = MainPageRouter()
-    private let interactor = MainPageInteractor(networkManager: NetworkManager())
-    @Published var foodData: Food?
-    @Published var willNavigateToDetails: Bool = false
-    
-    @Published var isShowAbout = false
-    
-    func retrieveData() async {
-        foodData = await interactor.fetchFoodData()
+extension MainPageView {
+    @MainActor class Presenter: ObservableObject {
         
-    }
-    
-    func linkBuilder<Content: View>(food: String, @ViewBuilder content: () -> Content) -> some View {
-        NavigationLink(destination: router.makeDetailsView(food: mockFood.description)) {
-            content()
+        private let router: Router
+        private let interactor: Interactor
+        
+        @Published var foodData: Food?
+        
+        init(router: Router, interactor: Interactor) {
+            self.router = router
+            self.interactor = interactor
+        }
+        
+        func retrieveData() async {
+            foodData = await interactor.fetchFoodData()
+        }
+        
+        @ViewBuilder
+        func linkBuilder<Content: View>(food: Food?, @ViewBuilder content: () -> Content) -> some View {
+            if food == nil {
+                Text("Loading...")
+            }
+            else {
+                NavigationLink(destination: router.makeDetailsView(food: food!)) {
+                    content()
+                }
+            }
         }
     }
-
-    
 }

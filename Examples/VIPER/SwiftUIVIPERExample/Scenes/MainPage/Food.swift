@@ -14,6 +14,7 @@ struct Food: Identifiable, Decodable {
     var description: String
     var ingredient: String
     var measurement: String
+
+    static let mockFood = Food(id: 1, uid: "1234", dish: "Mock Food", description: "Great Food", ingredient: "Lots of stuff", measurement: "A lot")
 }
 
-let mockFood = Food(id: 1, uid: "1234", dish: "Mock Food", description: "Great Food", ingredient: "Lots of stuff", measurement: "A lot")

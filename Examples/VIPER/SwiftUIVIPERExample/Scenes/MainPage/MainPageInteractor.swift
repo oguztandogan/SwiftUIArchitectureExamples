@@ -7,24 +7,23 @@
 
 import Foundation
 
-@MainActor class MainPageInteractor: ObservableObject {
-
-    private let networkManager: NetworkManagerProtocol
-    
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
-    }
-    
-    
-    /// Retrieve data from Network Manager
-    func fetchFoodData() async -> Food {
-        do {
-            return try await networkManager.getRandomFood()
+extension MainPageView {
+    @MainActor class Interactor: ObservableObject {
+        
+        private let networkManager: NetworkManagerProtocol
+        
+        init(networkManager: NetworkManagerProtocol) {
+            self.networkManager = networkManager
         }
-        catch {
-            return mockFood
+        
+        /// Retrieve data from Network Manager
+        func fetchFoodData() async -> Food {
+            do {
+                return try await networkManager.getRandomFood()
+            }
+            catch {
+                return Food.mockFood
+            }
         }
     }
-    
-    
 }

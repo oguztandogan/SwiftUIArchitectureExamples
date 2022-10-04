@@ -9,20 +9,14 @@ import SwiftUI
 
 struct MainPageView: View {
     
-    @ObservedObject var presenter: MainPagePresenter
-    @State private var selection: String? = nil
+    @ObservedObject var presenter: Presenter
 
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Text("Foods: ")
-                
-                presenter.linkBuilder(food: presenter.foodData?.dish ?? "Loading") {
-                    Text(presenter.foodData?.dish ?? "Loading")
-                    
+                presenter.linkBuilder(food: presenter.foodData) {
+                    Text(presenter.foodData!.dish)
                 }
-                
-                
             }
             .onAppear{
                 Task {
@@ -36,11 +30,13 @@ struct MainPageView: View {
 
 struct FrogsListView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = MainPagePresenter()
-        let list = MainPageView(presenter: presenter)
+        let presenter = MainPageView.Presenter(
+            router: MainPageView.Router(),
+            interactor: MainPageView.Interactor(networkManager: NetworkManager())
+        )
         return Group {
             NavigationView {
-                list
+                MainPageView(presenter: presenter)
             }
         }
     }
