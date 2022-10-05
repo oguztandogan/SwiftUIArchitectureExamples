@@ -18,13 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A77F5E0D28ED7B7B0047B711 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A78FC65F28E2FB03006ECA95;
-			remoteInfo = SwiftUIVIPERExample;
-		};
 		A78FC62928E1961E006ECA95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A78FC60F28E19617006ECA95 /* Project object */;
@@ -42,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftUIVIPERExample.xcodeproj; path = ../VIPER/SwiftUIVIPERExample.xcodeproj; sourceTree = "<group>"; };
 		A78FC61728E19617006ECA95 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78FC61A28E19617006ECA95 /* SwiftUIMVVMExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMExampleApp.swift; sourceTree = "<group>"; };
 		A78FC61C28E19618006ECA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,18 +74,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A77F5E0A28ED7B7B0047B711 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A77F5E0E28ED7B7B0047B711 /* SwiftUIVIPERExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A78FC60E28E19617006ECA95 = {
 			isa = PBXGroup;
 			children = (
-				A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */,
 				A78FC61928E19617006ECA95 /* SwiftUIMVVMExample */,
 				A78FC61828E19617006ECA95 /* Products */,
 			);
@@ -247,12 +230,6 @@
 			mainGroup = A78FC60E28E19617006ECA95;
 			productRefGroup = A78FC61828E19617006ECA95 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A77F5E0A28ED7B7B0047B711 /* Products */;
-					ProjectRef = A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A78FC61628E19617006ECA95 /* MVVM */,
@@ -261,16 +238,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A77F5E0E28ED7B7B0047B711 /* SwiftUIVIPERExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftUIVIPERExample.app;
-			remoteRef = A77F5E0D28ED7B7B0047B711 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A78FC61528E19617006ECA95 /* Resources */ = {
