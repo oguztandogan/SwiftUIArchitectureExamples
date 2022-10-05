@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct MainPageView: View {
+struct FoodsView: View {
     
-    @ObservedObject var viewModel: MainPageViewModel
+    @ObservedObject var viewModel: FoodsViewModel
 
     var body: some View {
         VStack(alignment: .leading) {

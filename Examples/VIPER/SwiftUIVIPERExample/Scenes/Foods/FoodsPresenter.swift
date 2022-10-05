@@ -9,18 +9,14 @@ import Foundation
 import SwiftUI
 
 
-@MainActor class MainPagePresenter: ObservableObject {
+@MainActor class FoodsPresenter: ObservableObject {
     
-    private let router = MainPageRouter()
-    private let interactor = MainPageInteractor(networkManager: NetworkManager())
+    private let router = FoodsRouter()
+    private let interactor = FoodsInteractor(networkManager: NetworkManager())
     @Published var foodData: Food?
-    @Published var willNavigateToDetails: Bool = false
-    
-    @Published var isShowAbout = false
-    
+        
     func retrieveData() async {
         foodData = await interactor.fetchFoodData()
-        
     }
     
     func linkBuilder<Content: View>(food: String, @ViewBuilder content: () -> Content) -> some View {

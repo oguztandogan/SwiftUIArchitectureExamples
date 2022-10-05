@@ -1,5 +1,5 @@
 //
-//  MainPageViewModel.swift
+//  FoodsViewModel.swift
 //  SwiftUICleanArchitectureExample
 //
 //  Created by Oguz Tandogan on 29.09.2022.
@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class MainPageViewModel: ObservableObject {
+class FoodsViewModel: ObservableObject {
     
     // SOURCE OF TRUTH
     @Published var foodData: Food?
@@ -33,3 +33,4 @@ class MainPageViewModel: ObservableObject {
     }
     
 }
+

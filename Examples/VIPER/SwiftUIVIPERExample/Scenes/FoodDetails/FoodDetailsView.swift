@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct DetailsPageView: View {
+struct FoodDetailsView: View {
     
-    @ObservedObject var presenter: DetailsPagePresenter
+    @ObservedObject var presenter: FoodDetailsPresenter
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,8 +25,8 @@ struct DetailsPageView: View {
 
 struct DetailsPageView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = DetailsPagePresenter(params: mockFood.description)
-        let list = DetailsPageView(presenter: presenter)
+        let presenter = FoodDetailsPresenter(params: mockFood.description)
+        let list = FoodDetailsView(presenter: presenter)
         return Group {
             NavigationView {
                 list

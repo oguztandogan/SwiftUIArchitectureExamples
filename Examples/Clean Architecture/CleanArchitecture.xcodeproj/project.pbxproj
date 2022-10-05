@@ -13,8 +13,8 @@
 		A764F04F28E5935D001354A9 /* FoodRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F04E28E5935D001354A9 /* FoodRepositoryInterface.swift */; };
 		A764F05228E59406001354A9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05128E59406001354A9 /* NetworkManager.swift */; };
 		A764F05628E5980E001354A9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05528E5980E001354A9 /* Food.swift */; };
-		A764F05928E59909001354A9 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05828E59909001354A9 /* MainPageView.swift */; };
-		A764F05B28E5990F001354A9 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05A28E5990F001354A9 /* MainPageViewModel.swift */; };
+		A764F05928E59909001354A9 /* FoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05828E59909001354A9 /* FoodsView.swift */; };
+		A764F05B28E5990F001354A9 /* FoodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F05A28E5990F001354A9 /* FoodsViewModel.swift */; };
 		A7A82D6A28E5879900CFE7B4 /* SwiftUICleanArchitectureExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A82D6928E5879900CFE7B4 /* SwiftUICleanArchitectureExampleApp.swift */; };
 		A7A82D6C28E5879900CFE7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A82D6B28E5879900CFE7B4 /* ContentView.swift */; };
 		A7A82D6E28E587A100CFE7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A82D6D28E587A100CFE7B4 /* Assets.xcassets */; };
@@ -28,9 +28,9 @@
 		A764F04E28E5935D001354A9 /* FoodRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepositoryInterface.swift; sourceTree = "<group>"; };
 		A764F05128E59406001354A9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A764F05528E5980E001354A9 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		A764F05828E59909001354A9 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
-		A764F05A28E5990F001354A9 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
-		A7A82D6628E5879900CFE7B4 /* SwiftUICleanArchitectureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICleanArchitectureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A764F05828E59909001354A9 /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
+		A764F05A28E5990F001354A9 /* FoodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsViewModel.swift; sourceTree = "<group>"; };
+		A7A82D6628E5879900CFE7B4 /* CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A82D6928E5879900CFE7B4 /* SwiftUICleanArchitectureExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICleanArchitectureExampleApp.swift; sourceTree = "<group>"; };
 		A7A82D6B28E5879900CFE7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7A82D6D28E587A100CFE7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		A764F05328E597FF001354A9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A764F05728E59901001354A9 /* MainPage */,
+				A764F05728E59901001354A9 /* Foods */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -114,13 +114,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A764F05728E59901001354A9 /* MainPage */ = {
+		A764F05728E59901001354A9 /* Foods */ = {
 			isa = PBXGroup;
 			children = (
-				A764F05828E59909001354A9 /* MainPageView.swift */,
-				A764F05A28E5990F001354A9 /* MainPageViewModel.swift */,
+				A764F05828E59909001354A9 /* FoodsView.swift */,
+				A764F05A28E5990F001354A9 /* FoodsViewModel.swift */,
 			);
-			path = MainPage;
+			path = Foods;
 			sourceTree = "<group>";
 		};
 		A7A82D5D28E5879900CFE7B4 = {
@@ -134,7 +134,7 @@
 		A7A82D6728E5879900CFE7B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7A82D6628E5879900CFE7B4 /* SwiftUICleanArchitectureExample.app */,
+				A7A82D6628E5879900CFE7B4 /* CleanArchitecture.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7A82D6528E5879900CFE7B4 /* SwiftUICleanArchitectureExample */ = {
+		A7A82D6528E5879900CFE7B4 /* CleanArchitecture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7A82D7528E587A100CFE7B4 /* Build configuration list for PBXNativeTarget "SwiftUICleanArchitectureExample" */;
+			buildConfigurationList = A7A82D7528E587A100CFE7B4 /* Build configuration list for PBXNativeTarget "CleanArchitecture" */;
 			buildPhases = (
 				A7A82D6228E5879900CFE7B4 /* Sources */,
 				A7A82D6328E5879900CFE7B4 /* Frameworks */,
@@ -180,9 +180,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUICleanArchitectureExample;
+			name = CleanArchitecture;
 			productName = SwiftUICleanArchitectureExample;
-			productReference = A7A82D6628E5879900CFE7B4 /* SwiftUICleanArchitectureExample.app */;
+			productReference = A7A82D6628E5879900CFE7B4 /* CleanArchitecture.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A7A82D6128E5879900CFE7B4 /* Build configuration list for PBXProject "SwiftUICleanArchitectureExample" */;
+			buildConfigurationList = A7A82D6128E5879900CFE7B4 /* Build configuration list for PBXProject "CleanArchitecture" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7A82D6528E5879900CFE7B4 /* SwiftUICleanArchitectureExample */,
+				A7A82D6528E5879900CFE7B4 /* CleanArchitecture */,
 			);
 		};
 /* End PBXProject section */
@@ -237,14 +237,14 @@
 			files = (
 				A764F04428E58DFB001354A9 /* AppDI.swift in Sources */,
 				A764F04828E58EFC001354A9 /* FoodRepository.swift in Sources */,
-				A764F05B28E5990F001354A9 /* MainPageViewModel.swift in Sources */,
+				A764F05B28E5990F001354A9 /* FoodsViewModel.swift in Sources */,
 				A7A82D6C28E5879900CFE7B4 /* ContentView.swift in Sources */,
 				A764F05228E59406001354A9 /* NetworkManager.swift in Sources */,
 				A764F04C28E592B3001354A9 /* FoodUsecase.swift in Sources */,
 				A764F05628E5980E001354A9 /* Food.swift in Sources */,
 				A7A82D6A28E5879900CFE7B4 /* SwiftUICleanArchitectureExampleApp.swift in Sources */,
 				A764F04F28E5935D001354A9 /* FoodRepositoryInterface.swift in Sources */,
-				A764F05928E59909001354A9 /* MainPageView.swift in Sources */,
+				A764F05928E59909001354A9 /* FoodsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7A82D6128E5879900CFE7B4 /* Build configuration list for PBXProject "SwiftUICleanArchitectureExample" */ = {
+		A7A82D6128E5879900CFE7B4 /* Build configuration list for PBXProject "CleanArchitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7A82D7328E587A100CFE7B4 /* Debug */,
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7A82D7528E587A100CFE7B4 /* Build configuration list for PBXNativeTarget "SwiftUICleanArchitectureExample" */ = {
+		A7A82D7528E587A100CFE7B4 /* Build configuration list for PBXNativeTarget "CleanArchitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7A82D7628E587A100CFE7B4 /* Debug */,

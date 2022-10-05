@@ -7,10 +7,9 @@
 
 import Foundation
 
-final class DetailsPagePresenter: ObservableObject {
+final class FoodDetailsPresenter: ObservableObject {
     
-    private let router = DetailsPageRouter()
-    private let interactor = DetailsPageInteractor(networkManager: NetworkManager())
+    private let interactor = FoodDetailsInteractor(networkManager: NetworkManager())
     @Published var food: String
     
     init(params: String) {

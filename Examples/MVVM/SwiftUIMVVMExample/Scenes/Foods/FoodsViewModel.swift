@@ -1,5 +1,5 @@
 //
-//  MainPageViewModel.swift
+//  FoodsViewModel.swift
 //  SwiftUIMVVMExample
 //
 //  Created by Oguz Tandogan on 26.09.2022.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-@MainActor class MainPageViewModel: ObservableObject {
+@MainActor class FoodsViewModel: ObservableObject {
     
     // SOURCE OF TRUTH
     @Published var foodData: Food?
     @Published private(set) var errorText: String?
-        
+    
     private let networkManager: NetworkManagerProtocol
     
     init(networkManager: NetworkManagerProtocol) {
@@ -22,15 +22,12 @@ import Foundation
     
     /// Retrieve data from Network Manager
     func fetchFoodData() async {
-        Task {
-            do {
-                foodData = try await networkManager.getRandomFood()
-            } catch {
-                errorText = error.localizedDescription
-            }
+        do {
+            foodData = try await networkManager.getRandomFood()
+        } catch {
+            errorText = error.localizedDescription
         }
-        
     }
     
-
+    
 }

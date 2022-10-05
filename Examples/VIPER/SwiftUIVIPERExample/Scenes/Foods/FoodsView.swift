@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct MainPageView: View {
+struct FoodsView: View {
     
-    @ObservedObject var presenter: MainPagePresenter
+    @ObservedObject var presenter: FoodsPresenter
     @State private var selection: String? = nil
 
     var body: some View {
@@ -36,8 +36,8 @@ struct MainPageView: View {
 
 struct FrogsListView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = MainPagePresenter()
-        let list = MainPageView(presenter: presenter)
+        let presenter = FoodsPresenter()
+        let list = FoodsView(presenter: presenter)
         return Group {
             NavigationView {
                 list

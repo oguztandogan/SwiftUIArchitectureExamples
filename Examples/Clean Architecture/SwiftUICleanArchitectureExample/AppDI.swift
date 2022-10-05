@@ -10,11 +10,11 @@ import Foundation
 class AppDI {
     static let shared = AppDI()
     
-    func getMainPageView() -> MainPageView {
+    func getFoodsView() -> FoodsView {
         let repository = FoodRepository(networkManager: NetworkManager())
         let useCase = FoodUseCase(foodRepository: repository)
-        let viewModel = MainPageViewModel(foodUsecase: useCase)
-        return MainPageView(viewModel: viewModel)
+        let viewModel = FoodsViewModel(foodUsecase: useCase)
+        return FoodsView(viewModel: viewModel)
     }
 
 }

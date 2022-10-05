@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainPageView(presenter: MainPagePresenter())
+        FoodsView(presenter: FoodsPresenter())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainPageView(presenter: MainPagePresenter())
+        FoodsView(presenter: FoodsPresenter())
     }
 }

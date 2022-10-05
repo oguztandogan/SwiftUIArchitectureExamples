@@ -7,7 +7,7 @@
 
 import Foundation
 
-@MainActor class MainPageInteractor: ObservableObject {
+@MainActor class FoodsInteractor: ObservableObject {
 
     private let networkManager: NetworkManagerProtocol
     
