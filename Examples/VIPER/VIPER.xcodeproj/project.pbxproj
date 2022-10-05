@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A78FC65F28E2FB03006ECA95 /* SwiftUIVIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIVIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FC65F28E2FB03006ECA95 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78FC66228E2FB03006ECA95 /* SwiftUIVIPERExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVIPERExampleApp.swift; sourceTree = "<group>"; };
 		A78FC66428E2FB03006ECA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A78FC66628E2FB05006ECA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		A78FC66028E2FB03006ECA95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A78FC65F28E2FB03006ECA95 /* SwiftUIVIPERExample.app */,
+				A78FC65F28E2FB03006ECA95 /* VIPER.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A78FC65E28E2FB03006ECA95 /* SwiftUIVIPERExample */ = {
+		A78FC65E28E2FB03006ECA95 /* VIPER */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A78FC66E28E2FB05006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIVIPERExample" */;
+			buildConfigurationList = A78FC66E28E2FB05006ECA95 /* Build configuration list for PBXNativeTarget "VIPER" */;
 			buildPhases = (
 				A78FC65B28E2FB03006ECA95 /* Sources */,
 				A78FC65C28E2FB03006ECA95 /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUIVIPERExample;
+			name = VIPER;
 			productName = SwiftUIVIPERExample;
-			productReference = A78FC65F28E2FB03006ECA95 /* SwiftUIVIPERExample.app */;
+			productReference = A78FC65F28E2FB03006ECA95 /* VIPER.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A78FC65A28E2FB03006ECA95 /* Build configuration list for PBXProject "SwiftUIVIPERExample" */;
+			buildConfigurationList = A78FC65A28E2FB03006ECA95 /* Build configuration list for PBXProject "VIPER" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A78FC65E28E2FB03006ECA95 /* SwiftUIVIPERExample */,
+				A78FC65E28E2FB03006ECA95 /* VIPER */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A78FC65A28E2FB03006ECA95 /* Build configuration list for PBXProject "SwiftUIVIPERExample" */ = {
+		A78FC65A28E2FB03006ECA95 /* Build configuration list for PBXProject "VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC66C28E2FB05006ECA95 /* Debug */,
@@ -408,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A78FC66E28E2FB05006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIVIPERExample" */ = {
+		A78FC66E28E2FB05006ECA95 /* Build configuration list for PBXNativeTarget "VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC66F28E2FB05006ECA95 /* Debug */,

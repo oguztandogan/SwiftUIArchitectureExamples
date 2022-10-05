@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A77F5E0D28ED7B7B0047B711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A78FC65F28E2FB03006ECA95;
+			remoteInfo = SwiftUIVIPERExample;
+		};
 		A78FC62928E1961E006ECA95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A78FC60F28E19617006ECA95 /* Project object */;
@@ -35,14 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A78FC61728E19617006ECA95 /* SwiftUIMVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftUIVIPERExample.xcodeproj; path = ../VIPER/SwiftUIVIPERExample.xcodeproj; sourceTree = "<group>"; };
+		A78FC61728E19617006ECA95 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78FC61A28E19617006ECA95 /* SwiftUIMVVMExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMExampleApp.swift; sourceTree = "<group>"; };
 		A78FC61C28E19618006ECA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A78FC61E28E1961E006ECA95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78FC62028E1961E006ECA95 /* SwiftUIMVVMExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMVVMExample.entitlements; sourceTree = "<group>"; };
 		A78FC62228E1961E006ECA95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A78FC62828E1961E006ECA95 /* SwiftUIMVVMExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMVVMExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A78FC63228E1961E006ECA95 /* SwiftUIMVVMExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMVVMExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FC62828E1961E006ECA95 /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78FC63228E1961E006ECA95 /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78FC64728E1968B006ECA95 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A78FC64928E19A68006ECA95 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		A78FC64C28E19B00006ECA95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -74,9 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A77F5E0A28ED7B7B0047B711 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A77F5E0E28ED7B7B0047B711 /* SwiftUIVIPERExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A78FC60E28E19617006ECA95 = {
 			isa = PBXGroup;
 			children = (
+				A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */,
 				A78FC61928E19617006ECA95 /* SwiftUIMVVMExample */,
 				A78FC61828E19617006ECA95 /* Products */,
 			);
@@ -85,9 +102,9 @@
 		A78FC61828E19617006ECA95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A78FC61728E19617006ECA95 /* SwiftUIMVVMExample.app */,
-				A78FC62828E1961E006ECA95 /* SwiftUIMVVMExampleTests.xctest */,
-				A78FC63228E1961E006ECA95 /* SwiftUIMVVMExampleUITests.xctest */,
+				A78FC61728E19617006ECA95 /* MVVM.app */,
+				A78FC62828E1961E006ECA95 /* MVVMTests.xctest */,
+				A78FC63228E1961E006ECA95 /* MVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A78FC61628E19617006ECA95 /* SwiftUIMVVMExample */ = {
+		A78FC61628E19617006ECA95 /* MVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A78FC63C28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExample" */;
+			buildConfigurationList = A78FC63C28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVM" */;
 			buildPhases = (
 				A78FC61328E19617006ECA95 /* Sources */,
 				A78FC61428E19617006ECA95 /* Frameworks */,
@@ -155,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUIMVVMExample;
+			name = MVVM;
 			productName = SwiftUIMVVMExample;
-			productReference = A78FC61728E19617006ECA95 /* SwiftUIMVVMExample.app */;
+			productReference = A78FC61728E19617006ECA95 /* MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A78FC62728E1961E006ECA95 /* SwiftUIMVVMExampleTests */ = {
+		A78FC62728E1961E006ECA95 /* MVVMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A78FC63F28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExampleTests" */;
+			buildConfigurationList = A78FC63F28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVMTests" */;
 			buildPhases = (
 				A78FC62428E1961E006ECA95 /* Sources */,
 				A78FC62528E1961E006ECA95 /* Frameworks */,
@@ -173,14 +190,14 @@
 			dependencies = (
 				A78FC62A28E1961E006ECA95 /* PBXTargetDependency */,
 			);
-			name = SwiftUIMVVMExampleTests;
+			name = MVVMTests;
 			productName = SwiftUIMVVMExampleTests;
-			productReference = A78FC62828E1961E006ECA95 /* SwiftUIMVVMExampleTests.xctest */;
+			productReference = A78FC62828E1961E006ECA95 /* MVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A78FC63128E1961E006ECA95 /* SwiftUIMVVMExampleUITests */ = {
+		A78FC63128E1961E006ECA95 /* MVVMUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A78FC64228E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExampleUITests" */;
+			buildConfigurationList = A78FC64228E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVMUITests" */;
 			buildPhases = (
 				A78FC62E28E1961E006ECA95 /* Sources */,
 				A78FC62F28E1961E006ECA95 /* Frameworks */,
@@ -191,9 +208,9 @@
 			dependencies = (
 				A78FC63428E1961E006ECA95 /* PBXTargetDependency */,
 			);
-			name = SwiftUIMVVMExampleUITests;
+			name = MVVMUITests;
 			productName = SwiftUIMVVMExampleUITests;
-			productReference = A78FC63228E1961E006ECA95 /* SwiftUIMVVMExampleUITests.xctest */;
+			productReference = A78FC63228E1961E006ECA95 /* MVVMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A78FC61228E19617006ECA95 /* Build configuration list for PBXProject "SwiftUIMVVMExample" */;
+			buildConfigurationList = A78FC61228E19617006ECA95 /* Build configuration list for PBXProject "MVVM" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,14 +247,30 @@
 			mainGroup = A78FC60E28E19617006ECA95;
 			productRefGroup = A78FC61828E19617006ECA95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A77F5E0A28ED7B7B0047B711 /* Products */;
+					ProjectRef = A77F5E0928ED7B7B0047B711 /* SwiftUIVIPERExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				A78FC61628E19617006ECA95 /* SwiftUIMVVMExample */,
-				A78FC62728E1961E006ECA95 /* SwiftUIMVVMExampleTests */,
-				A78FC63128E1961E006ECA95 /* SwiftUIMVVMExampleUITests */,
+				A78FC61628E19617006ECA95 /* MVVM */,
+				A78FC62728E1961E006ECA95 /* MVVMTests */,
+				A78FC63128E1961E006ECA95 /* MVVMUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A77F5E0E28ED7B7B0047B711 /* SwiftUIVIPERExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftUIVIPERExample.app;
+			remoteRef = A77F5E0D28ED7B7B0047B711 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A78FC61528E19617006ECA95 /* Resources */ = {
@@ -298,12 +331,12 @@
 /* Begin PBXTargetDependency section */
 		A78FC62A28E1961E006ECA95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A78FC61628E19617006ECA95 /* SwiftUIMVVMExample */;
+			target = A78FC61628E19617006ECA95 /* MVVM */;
 			targetProxy = A78FC62928E1961E006ECA95 /* PBXContainerItemProxy */;
 		};
 		A78FC63428E1961E006ECA95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A78FC61628E19617006ECA95 /* SwiftUIMVVMExample */;
+			target = A78FC61628E19617006ECA95 /* MVVM */;
 			targetProxy = A78FC63328E1961E006ECA95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -513,7 +546,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIMVVMExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIMVVMExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM";
 			};
 			name = Debug;
 		};
@@ -536,7 +569,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIMVVMExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIMVVMExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVM";
 			};
 			name = Release;
 		};
@@ -587,7 +620,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A78FC61228E19617006ECA95 /* Build configuration list for PBXProject "SwiftUIMVVMExample" */ = {
+		A78FC61228E19617006ECA95 /* Build configuration list for PBXProject "MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC63A28E1961E006ECA95 /* Debug */,
@@ -596,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A78FC63C28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExample" */ = {
+		A78FC63C28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC63D28E1961E006ECA95 /* Debug */,
@@ -605,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A78FC63F28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExampleTests" */ = {
+		A78FC63F28E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC64028E1961E006ECA95 /* Debug */,
@@ -614,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A78FC64228E1961E006ECA95 /* Build configuration list for PBXNativeTarget "SwiftUIMVVMExampleUITests" */ = {
+		A78FC64228E1961E006ECA95 /* Build configuration list for PBXNativeTarget "MVVMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A78FC64328E1961E006ECA95 /* Debug */,
