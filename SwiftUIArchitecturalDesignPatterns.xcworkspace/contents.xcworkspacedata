@@ -10,4 +10,7 @@
    <FileRef
       location = "group:/Users/oguz.tandogan/Documents/Github/SwiftUIArchitectureExamples/Examples/Clean Architecture/CleanArchitecture.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:/Users/oguz.tandogan/Documents/Github/SwiftUIArchitectureExamples/Examples/Composable Architecture/ComposableArchitecture.xcodeproj">
+   </FileRef>
 </Workspace>
