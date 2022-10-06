@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainPageView(viewModel: MainPageView.ViewModel(networkManager: NetworkManager()))
+        CountriesView(viewModel: CountriesViewModel(networkManager: NetworkManager()))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainPageView(viewModel: MainPageView.ViewModel(networkManager: NetworkManager()))
+        CountriesView(viewModel: CountriesViewModel(networkManager: NetworkManager()))
     }
 }
