@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct MainPageView: View {
+struct CountriesView: View {
     
-    @ObservedObject var presenter: Presenter
+    @ObservedObject var presenter: CountriesPresenter
 
     var body: some View {
         NavigationView {
@@ -30,9 +30,9 @@ struct MainPageView: View {
 
 struct FrogsListView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = MainPageView.Presenter(
-            router: MainPageView.Router(),
-            interactor: MainPageView.Interactor(networkManager: NetworkManager())
+        let presenter = CountriesPresenter(
+            router: CountriesRouter(),
+            interactor: CountriesInteractor(networkManager: NetworkManager())
         )
         return Group {
             NavigationView {
